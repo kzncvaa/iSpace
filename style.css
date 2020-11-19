@@ -19,6 +19,7 @@ body {
   zoom: 0.8;
   /* Other non-webkit browsers */
   zoom: 80%;
+  height: 500px;
 }
 
 .container {
