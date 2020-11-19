@@ -80,6 +80,8 @@ body {
   margin-top: 45px;
   border: solid 1px #F4522F;
   transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
   cursor: pointer;
   color: white;
   text-decoration: none;
@@ -132,6 +134,8 @@ body {
   font-size: 18px;
   line-height: 154%;
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   letter-spacing: 0.195em;
   color: #000000;
 }
@@ -160,6 +164,8 @@ body {
   opacity: 0;
   transform: translateY(-30px);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
 }
 .aboutus .aboutus__main .aboutus__nav .left {
   display: flex;
@@ -173,6 +179,8 @@ body {
   box-shadow: 4px 4px 4px rgba(244, 82, 47, 0.35);
   border: 1px solid #F4522F;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
   cursor: pointer;
 }
 .aboutus .aboutus__main .aboutus__nav .nav__button p {
@@ -290,6 +298,8 @@ body {
   width: -webkit-max-content;
   width: max-content;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
 }
 .aboutus .aboutus__main .aboutus__jumbotron .content__mousescroll:hover {
   transform: translateY(10px);
