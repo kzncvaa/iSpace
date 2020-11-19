@@ -13,8 +13,9 @@ body{
    // transform: scale(0.9) translateY(-280px);
     width: 120vw;
     overflow-x: hidden;
-    -moz-transform: scale(0.8, 0.8), translateY(-610px), translateX(-205px); /* Moz-browsers */
-    
+    -moz-transform: scale(0.8, 0.8) ; /* Moz-browsers */
+    -moz-transform:  translateY(-610px);
+    -moz-transform: translateX(-205px);
     -moz-zoom: 80%;
     -webkit-zoom: 80%; /* Webkit browsers */
     zoom: 0.8; /* Other non-webkit browsers */
