@@ -1206,7 +1206,7 @@ body {
   }
 
   .background__title {
-    font-size: 100px !important;
+    font-size: 80px !important;
   }
 
   .wrapper__aside {
@@ -1295,25 +1295,28 @@ body {
     height: 70px;
   }
   .wrapper__choise .background__title {
-    font-size: 110px;
+    font-size: 60px !important;
   }
   .wrapper__choise .choise__content {
-    margin-top: -6.114em;
+    margin-top: -2.14em;
   }
   .wrapper__choise .choise__items {
     margin-top: 35px;
     width: 100%;
   }
+  .wrapper__choise .content {
+    margin: 0 !important;
+  }
   .wrapper__choise .item__content {
     margin-right: 30px;
   }
   .wrapper__choise .item__content p {
-    width: 120vw !important;
+    width: 300px !important;
   }
   .wrapper__choise .rect {
-    width: 120vw !important;
+    width: 1200px !important;
     height: 112px !important;
-    right: -250px !important;
+    right: 200px !important;
   }
 
   .under__title {
@@ -1333,15 +1336,20 @@ body {
   }
   .under__img img {
     margin: 0 auto;
+    width: 100% !important;
+    height: auto !important;
   }
 
   .wrapper__numbers .numbers__background {
     position: relative !important;
     top: 0 !important;
     left: 0 !important;
+    margin-top: 2em;
+    margin-bottom: 0 !important;
   }
   .wrapper__numbers .numbers__content {
     flex-direction: column-reverse;
+    margin-top: 3em;
   }
   .wrapper__numbers .numbers {
     align-items: flex-start;
@@ -1352,13 +1360,41 @@ body {
   .wrapper__numbers .numbers .content__img {
     margin-top: 1.7em;
   }
+  .wrapper__numbers .numbers .content__img img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .wrapper__numbers .numbers .numbers__blocks {
+    flex-direction: column;
+  }
+  .wrapper__numbers .numbers .numbers__blocks .block__row {
+    flex-direction: column !important;
+  }
+  .wrapper__numbers .numbers .numbers__blocks .block {
+    margin: 0 !important;
+    width: 100% !important;
+    padding: auto !important;
+    height: 220px !important;
+  }
+  .wrapper__numbers .numbers .numbers__blocks .block:first-child {
+    margin-bottom: 28px !important;
+  }
+  .wrapper__numbers .numbers .numbers__blocks .block .block__title {
+    margin: 0 !important;
+  }
 
   .wrapper__contacts .contacts__background .circle {
-    left: -677px;
-    top: 4055px;
+    left: -735px;
+    top: 3955px;
   }
   .wrapper__contacts .contacts__background .blue {
     color: #E6F5FF;
+  }
+  .wrapper__contacts .contacts__background .background__title {
+    font-size: 70px !important;
+  }
+  .wrapper__contacts .contacts {
+    margin-top: -2.6em !important;
   }
   .wrapper__contacts .contacts .contacts__map {
     width: 769px !important;
@@ -1368,6 +1404,9 @@ body {
     background-color: #9AD8FF !important;
   }
 
+  .wrapper__form {
+    margin-bottom: 0 !important;
+  }
   .wrapper__form .form {
     flex-direction: column;
   }
@@ -1408,7 +1447,15 @@ body {
     margin: 0 auto;
     margin-top: 49px;
   }
+  .wrapper__form .form .form__img img {
+    width: 400px !important;
+    height: auto !important;
+  }
 
+  .wrapper__footer {
+    width: 110% !important;
+    margin: 0 !important;
+  }
   .wrapper__footer .footer__column:first-child {
     width: 60%;
   }
@@ -1481,7 +1528,7 @@ body {
   }
   .wrapper__menu .nav__links {
     position: relative;
-    width: 75%;
+    width: 105%;
     background-color: white;
     box-shadow: 15px 15px 30px rgba(196, 196, 196, 0.6);
   }
