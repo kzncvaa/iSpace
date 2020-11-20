@@ -22,7 +22,8 @@ body {
   height: 500px;
 }
 
-.wrapper__aboutus {
+.wrapper__aboutus, .wrapper__services, .choise__content, .under, .wrapper__numbers, .wrapper__contacts,
+.wrapper__form, .wrapper__footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -402,7 +403,7 @@ body {
   position: absolute;
   z-index: -100;
   background: #E6F5FF;
-  width: 980px;
+  width: 1080px;
   height: 112px;
   right: -10px;
 }
