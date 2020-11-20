@@ -1275,7 +1275,7 @@ body{
     }
    /* стили для xs-устройств */
    .container{
-    width: 80%;
+    width: 90%;
 }
 .device{
     display: flex !important;
@@ -1289,24 +1289,34 @@ body{
 .wrapper__aboutus{
     .aboutus__main{
         .aboutus__nav{
+            .aboutus__menu {
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
             .nav__links{
                 display: none;
             }
             .nav__logo{
-                width: 200%;
+                width: 100%;
                 margin-left: 20px;
+                img{
+                    width: 200px;
+                    height: auto;
+                }
             }
-        }
-        .language__active{
-            display: flex;
-            align-items: center;
-            .arr{
-                align-self: center;
-                margin: 0 !important;
+            .left{
+                .nav__button{
+                    margin-right: 0;
+                    p{
+                        margin: 10px;
+                    }
+                }
+                .nav__language{
+                    display: none;
+                }
             }
-        }
-        .language__items{
-            transform: translateX(35%) !important;
         }
     }
     .aboutus__jumbotron{
@@ -1317,7 +1327,7 @@ body{
             align-self: center;
         }
         .jumbotron__content{
-            padding-top: 96px !important;
+            padding-top: 20px !important;
             .content__buttons{
                 margin-top: 23px !important;
             }

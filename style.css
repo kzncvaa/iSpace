@@ -1193,7 +1193,7 @@ body {
 
   /* стили для xs-устройств */
   .container {
-    width: 80%;
+    width: 90%;
   }
 
   .device {
@@ -1208,23 +1208,29 @@ body {
     display: none !important;
   }
 
+  .wrapper__aboutus .aboutus__main .aboutus__nav .aboutus__menu img {
+    width: 50px;
+    height: 50px;
+  }
   .wrapper__aboutus .aboutus__main .aboutus__nav .nav__links {
     display: none;
   }
   .wrapper__aboutus .aboutus__main .aboutus__nav .nav__logo {
-    width: 200%;
+    width: 100%;
     margin-left: 20px;
   }
-  .wrapper__aboutus .aboutus__main .language__active {
-    display: flex;
-    align-items: center;
+  .wrapper__aboutus .aboutus__main .aboutus__nav .nav__logo img {
+    width: 200px;
+    height: auto;
   }
-  .wrapper__aboutus .aboutus__main .language__active .arr {
-    align-self: center;
-    margin: 0 !important;
+  .wrapper__aboutus .aboutus__main .aboutus__nav .left .nav__button {
+    margin-right: 0;
   }
-  .wrapper__aboutus .aboutus__main .language__items {
-    transform: translateX(35%) !important;
+  .wrapper__aboutus .aboutus__main .aboutus__nav .left .nav__button p {
+    margin: 10px;
+  }
+  .wrapper__aboutus .aboutus__main .aboutus__nav .left .nav__language {
+    display: none;
   }
   .wrapper__aboutus .aboutus__jumbotron {
     display: flex;
@@ -1235,7 +1241,7 @@ body {
     align-self: center;
   }
   .wrapper__aboutus .aboutus__jumbotron .jumbotron__content {
-    padding-top: 96px !important;
+    padding-top: 20px !important;
   }
   .wrapper__aboutus .aboutus__jumbotron .jumbotron__content .content__buttons {
     margin-top: 23px !important;
