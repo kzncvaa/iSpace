@@ -427,6 +427,7 @@ body {
 .wrapper__numbers .numbers__background {
   position: absolute;
   right: 10%;
+  margin-bottom: 28em;
   z-index: -100;
 }
 .wrapper__numbers .numbers {
