@@ -21,6 +21,11 @@ body{
     zoom: 80%;
     height: 500px;
 }
+.wrapper__aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .container{
     width: 80%;
     margin: 0 auto;
