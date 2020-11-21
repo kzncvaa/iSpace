@@ -1187,9 +1187,26 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  html {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
   body {
     height: -webkit-max-content;
     height: max-content;
+    width: 120vw;
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .wrapper {
+    overflow-x: hidden;
+  }
+
+  .circle:nth-child(2) {
+    display: none;
   }
 
   /* стили для xs-устройств */
@@ -1553,7 +1570,7 @@ body {
   .wrapper__menu .link {
     font-style: normal;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 130%;
     /* or 78px */
     letter-spacing: 0.115em;

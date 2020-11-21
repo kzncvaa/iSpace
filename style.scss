@@ -1270,9 +1270,23 @@ body{
     margin-top: 20px;
 }
 @media screen and (max-width: 480px)  {
+    html{
+        overflow-x: hidden;
+        width: 100vw;
+    }
     body{
     //    overflow: hidden;
         height: max-content;
+        width: 120vw;
+        overflow-x: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+    .wrapper{
+        overflow-x: hidden;
+    }
+    .circle:nth-child(2){
+        display: none;
     }
    /* стили для xs-устройств */
    .container{
@@ -1663,7 +1677,7 @@ body{
     .link{
         font-style: normal;
         font-weight: 900;
-        font-size: 60px;
+        font-size: 40px;
         line-height: 130%;
         /* or 78px */
         
