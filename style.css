@@ -129,6 +129,7 @@ body {
   line-height: 154%;
   letter-spacing: 0.195em;
   color: #000000;
+  margin: 0 30px;
 }
 .aboutus .aboutus__main .aboutus__nav .nav__links .link {
   display: flex;
@@ -213,7 +214,8 @@ body {
 }
 .aboutus .aboutus__main .aboutus__nav .nav__language .language__active {
   cursor: pointer;
-  align-items: flex-end;
+  align-items: center;
+  display: flex;
 }
 .aboutus .aboutus__main .aboutus__nav .nav__language .language__active img {
   margin-bottom: 4px;
@@ -1400,6 +1402,10 @@ body {
     margin: 0 !important;
   }
 
+  .white {
+    color: #E6F5FF !important;
+  }
+
   .wrapper__contacts .contacts__background .circle {
     left: -735px;
     top: 3955px;
@@ -1413,15 +1419,27 @@ body {
   .wrapper__contacts .contacts {
     margin-top: -2.6em !important;
   }
+  .wrapper__contacts .contacts .contacts__content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.9em !important;
+  }
   .wrapper__contacts .contacts .contacts__map {
-    width: 769px !important;
-    height: 545px !important;
+    width: auto !important;
+    height: auto !important;
+    margin-top: 2.9em !important;
   }
   .wrapper__contacts .contacts .contacts__datas {
     background-color: #9AD8FF !important;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    padding: 20px !important;
+    height: auto !important;
+    width: auto !important;
   }
 
   .wrapper__form {
+    margin-top: 2.944em !important;
     margin-bottom: 0 !important;
   }
   .wrapper__form .form {
@@ -1470,16 +1488,24 @@ body {
   }
 
   .wrapper__footer {
-    width: 110% !important;
-    margin: 0 !important;
+    width: 100% !important;
+    margin: -7em 0 7em 0 !important;
+    padding-top: 20px !important;
   }
-  .wrapper__footer .footer__column:first-child {
-    width: 60%;
+  .wrapper__footer .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper__footer .footer__column .logo {
+    margin-bottom: 25px !important;
+  }
+  .wrapper__footer .footer__column .foot__btn {
+    display: none;
   }
   .wrapper__footer .footer__column:nth-child(2) {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .wrapper__footer .footer__column:nth-child(2) .info {
     cursor: pointer;
@@ -1509,28 +1535,29 @@ body {
     /* identical to box height, or 31px */
     letter-spacing: 0.195em;
   }
-  .wrapper__footer .footer__column:nth-child(2) .item .item__title {
+  .wrapper__footer .footer__column:nth-child(2) .contacts__items .item .item__title {
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
     line-height: 154%;
     /* or 28px */
-    text-align: center;
+    text-align: start;
     letter-spacing: 0.09em;
   }
-  .wrapper__footer .footer__column:nth-child(2) .item .item__subtitle {
+  .wrapper__footer .footer__column:nth-child(2) .contacts__items .item .item__subtitle {
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
     line-height: 154%;
     /* or 28px */
-    text-align: center;
+    text-align: start;
     letter-spacing: 0.09em;
   }
-  .wrapper__footer .footer__column:nth-child(2) .item:first-child {
+  .wrapper__footer .footer__column:nth-child(2) .contacts__items .item:first-child {
     margin: 23px 0 25px;
   }
   .wrapper__footer .footer__buttons {
+    margin: 100px 0;
     justify-content: space-around !important;
   }
 
