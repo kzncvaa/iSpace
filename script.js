@@ -21,6 +21,9 @@ $(document).ready(function () {
         $('.alert').css({display : `none`});
         $('.wrapper__menu').css({display : `none`});
     });
+    $('.links').click(function (e) { 
+        $('.wrapper__menu').css({display : `none`});
+    });
     if(document.documentElement.scroll>1100){
         $('.wrapper__aside').css({display : `none`});
     }
