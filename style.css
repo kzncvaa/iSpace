@@ -1680,8 +1680,7 @@ body {
     width: 100% !important;
     height: auto !important;
   }
-
-  .alert__wrapper__aboutus .aboutus__content p {
+  .alert p {
     font-size: 15px !important;
   }
 }
