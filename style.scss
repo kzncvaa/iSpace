@@ -1270,6 +1270,7 @@ body{
     color: #FFFFFF;
     margin-top: 20px;
 }
+
 @media screen and (max-width: 480px)  {
     html{
         overflow-x: hidden;
@@ -1292,8 +1293,11 @@ body{
         display: none;
     }
    /* стили для xs-устройств */
-   .container{
+    .container{
     width: 90%;
+}
+.cont__dev{
+    width: 100% ;
 }
 .device{
     display: flex !important;
@@ -1310,6 +1314,7 @@ body{
 .wrapper__aboutus{
     .aboutus__main{
         .aboutus__nav{
+            padding: 0 20px;
             .aboutus__menu {
                 img{
                     width: 50px;
@@ -1799,5 +1804,4 @@ body{
         height: 516px;
     }
 }
-    
-    }
+}

@@ -1216,6 +1216,10 @@ body {
     width: 90%;
   }
 
+  .cont__dev {
+    width: 100%;
+  }
+
   .device {
     display: flex !important;
   }
@@ -1232,6 +1236,9 @@ body {
     display: none !important;
   }
 
+  .wrapper__aboutus .aboutus__main .aboutus__nav {
+    padding: 0 20px;
+  }
   .wrapper__aboutus .aboutus__main .aboutus__nav .aboutus__menu img {
     width: 50px;
     height: 50px;
