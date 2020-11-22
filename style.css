@@ -7,10 +7,10 @@
 }
 
 body {
+  width: 100%;
   font-family: "Roboto", sans-serif;
   color: #021A58;
-  width: 120vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   -moz-transform: scale(0.8, 0.8);
   -moz-transform-origin: left top;
   -moz-zoom: 80%;

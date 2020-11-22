@@ -8,16 +8,17 @@ $textcolor : #021A58;
 $accent : #F4522F;
 $additional : #E6F5FF;
 body{
-    font-family: 'Roboto', sans-serif;
-    color: $textcolor;
-   // transform: scale(0.9) translateY(-280px);
-    width: 120vw;
-    overflow-x: hidden;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #021A58;
+    overflow-x: hidden !important;
     -moz-transform: scale(0.8, 0.8);
     -moz-transform-origin: left top;
     -moz-zoom: 80%;
-    -webkit-zoom: 80%; /* Webkit browsers */
-    zoom: 0.8; /* Other non-webkit browsers */
+    -webkit-zoom: 80%;
+    /* Webkit browsers */
+    zoom: 0.8;
+    /* Other non-webkit browsers */
     zoom: 80%;
     height: 500px;
 }
