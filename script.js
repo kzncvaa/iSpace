@@ -59,8 +59,8 @@ $(window).scroll(function(){
 
     if(isSafari){
         $('.container').css({zoom : '110%'});
+        $('.wrapper__aside').css({height : '100vh'});
     }
-
 
 });
 

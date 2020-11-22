@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -1282,6 +1281,9 @@ body {
   .wrapper__aboutus .aboutus__jumbotron .jumbotron__content .content__buttons {
     margin-top: 23px !important;
   }
+  .wrapper__aboutus .aboutus__jumbotron .title {
+    font-size: 55px !important;
+  }
 
   .wrapper__services {
     position: relative;
@@ -1584,6 +1586,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
+    margin-bottom: 25px;
   }
   .wrapper__menu .content__info li {
     display: flex;
@@ -1619,7 +1622,7 @@ body {
     color: #021A58;
     width: -webkit-max-content;
     width: max-content;
-    margin: 4px 0 15px;
+    margin: 25px 0 !important;
   }
   .wrapper__menu .nav__links {
     position: relative;
@@ -1643,7 +1646,7 @@ body {
     flex-direction: column;
     padding: 10%;
     justify-content: space-between;
-    height: 90%;
+    height: 93%;
   }
   .wrapper__menu .link {
     font-style: normal;
@@ -1683,5 +1686,12 @@ body {
   }
   .alert p {
     font-size: 15px !important;
+  }
+
+  .alert__wrapper__call p {
+    font-size: 18px !important;
+  }
+  .alert__wrapper__call .call__content {
+    margin-top: 20px !important;
   }
 }
