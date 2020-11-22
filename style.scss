@@ -1763,8 +1763,8 @@ body{
     .link{
         font-style: normal;
         font-weight: 900;
-        font-size: 40px;
-        line-height: 130%;
+        font-size: 30px;
+        line-height: 160%;
         /* or 78px */
         text-decoration: none;
         
@@ -1796,12 +1796,18 @@ body{
     }
 }
 .alert{
+    z-index: 250;
     padding: 0 10% 0 5%;
+    &>div{
+        width: 100% !important;
+        height: auto !important;
+    }
 }
 .alert__wrapper__aboutus{
-    .alert__aboutus{
-        width: 100%;
-        height: 516px;
+    .aboutus__content{
+        p{
+            font-size: 15px !important;
+        }
     }
 }
 }
