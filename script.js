@@ -24,6 +24,9 @@ $(document).ready(function () {
     $('.links').click(function (e) { 
         $('.wrapper__menu').css({display : `none`});
     });
+    $('.menulogo').click(function (e) { 
+        $('.wrapper__menu').css({display : `none`});
+    });
     if(document.documentElement.scroll>1100){
         $('.wrapper__aside').css({display : `none`});
     }
