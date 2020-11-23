@@ -1228,7 +1228,7 @@ body {
   }
 
   .background__title {
-    font-size: 80px !important;
+    font-size: 60px !important;
   }
 
   .wrapper__aside {
@@ -1421,9 +1421,6 @@ body {
   }
   .wrapper__contacts .contacts__background .blue {
     color: #E6F5FF;
-  }
-  .wrapper__contacts .contacts__background .background__title {
-    font-size: 70px !important;
   }
   .wrapper__contacts .contacts {
     margin-top: -2.6em !important;
