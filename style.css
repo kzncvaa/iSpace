@@ -1694,4 +1694,10 @@ body {
   .alert__wrapper__call .call__content {
     margin-top: 20px !important;
   }
+
+  .ruen-abus:after {
+    content: "";
+    height: 10px;
+    width: 1px;
+  }
 }

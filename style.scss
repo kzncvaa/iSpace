@@ -1828,4 +1828,9 @@ body{
 .wrapper__services, .wrapper__choise, .under, .wrapper__contacts{
    
 }
+.ruen-abus:after{
+    content: '';
+    height: 10px;
+    width: 1px;
+}
 }
