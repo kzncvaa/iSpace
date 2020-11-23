@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+ //   scroll-behavior: smooth;
 }
 $textcolor : #021A58;
 $accent : #F4522F;
@@ -20,6 +21,7 @@ body{
     /* Other non-webkit browsers */
     zoom: 80%;
     height: 500px;
+    
 }
 .wrapper__aboutus, .wrapper__services, .choise__content, .under, .wrapper__numbers, .wrapper__contacts
 , .wrapper__form, .wrapper__footer{
@@ -834,15 +836,8 @@ body{
     z-index: 1;
     position: static;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     left: 1651.5px;
     top: -5px;
@@ -1829,5 +1824,8 @@ body{
     .call__content{
         margin-top: 20px !important;
     }
+}
+.wrapper__services, .wrapper__choise, .under, .wrapper__contacts{
+   
 }
 }

@@ -1,3 +1,4 @@
+'use strict';
 
 $(document).ready(function () {
     $('.call').click(function (e) { 
@@ -23,7 +24,9 @@ $(document).ready(function () {
     });
     $('.links').click(function (e) { 
         $('.wrapper__menu').css({display : `none`});
+        
     });
+    
     $('.menulogo').click(function (e) { 
         $('.wrapper__menu').css({display : `none`});
     });
@@ -53,6 +56,25 @@ $(window).scroll(function(){
                 $('.aboutus__nav').css({"position" : "static", "background" : "none"});
             }
         });
+        $('a').click(function (e) { 
+            $('.wrapper__menu').css({display : `none`});
+            setTimeout(function(){
+                $('.aboutus__nav').fadeOut(300).css({display : 'none'});
+            }, 1000);
+            
+        });
+        // $('.link').click(function (e) { 
+        //     var x = $(this).attr('href');
+        //     console.log(x);
+        //     console.log($(x).offset().top);
+        //     console.log($(x).offset().top-200);
+        //     // setTimeout(function(){
+        //     //     document.documentElement.scrollTop = $(x).offset().top-200;
+        //     // }, 10)
+        //     $('html, body').animate({
+        //         scrollTop: $(x).offset().top-200
+        //       }, 500);
+        // });
     }
 
     var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -65,3 +87,19 @@ $(window).scroll(function(){
 
 });
 
+
+const anchors = document.querySelectorAll('a[href^="#"]')
+
+// Цикл по всем ссылкам
+for(let anchor of anchors) {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault() // Предотвратить стандартное поведение ссылок
+    // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+    const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+    // Плавная прокрутка до элемента с id = href у ссылки
+    document.querySelector(goto).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
