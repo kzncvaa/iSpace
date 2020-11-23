@@ -63,8 +63,9 @@ $(window).scroll(function(){
 
                 console.log($(document).scrollTop());
                 let x = $(document).scrollTop() -93;
-                $(document).scrollTop(x);
-
+             //   $(document).scrollTop(x, 100);
+              //  $(document).animate({scrollTop: x}, 400);
+              $('html, body').animate({scrollTop:x},'400');
             }, 1000);
 
 
