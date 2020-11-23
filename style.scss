@@ -839,6 +839,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    -webkit-box-pack: space-between;
     left: 1651.5px;
     top: -5px;
     
@@ -897,6 +898,7 @@ body{
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            -webkit-box-pack: space-between;
             text-align: center;
             width: 100%;
             height: 100%;
@@ -991,6 +993,7 @@ body{
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
+            -webkit-box-pack: center;
             width: 100%;
             height: 100%;
             background-color: white;
@@ -1105,6 +1108,7 @@ body{
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-around;
+            -webkit-box-pack: space-between;
             width: 100%;
             height: 100%;
             background-color: white;
@@ -1183,6 +1187,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    -webkit-box-pack: center;
     .line{
         width: 5px;
         height: 30%;        
@@ -1242,6 +1247,7 @@ body{
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: column;
     align-items: flex-end;
     width: 100%;
     right: -32px;
@@ -1277,14 +1283,14 @@ body{
 @media screen and (max-width: 480px)  {
     html{
         overflow-x: hidden;
-        width: 100vw;
+        width: 100%;
     }
     body{
     //    overflow: hidden;
         height: -webkit-max-content;
         height: -moz-max-content;
         height: max-content;
-        width: 120vw;
+        width: 100%;
         overflow-x: hidden;
         margin: 0 auto;
         position: relative;
@@ -1351,6 +1357,7 @@ body{
     .aboutus__jumbotron{
         display: flex;
         flex-direction: column-reverse !important;
+        -webkit-box-orient: column;
         .jumbotron__img{
             position: relative !important;
             align-self: center;
@@ -1390,11 +1397,13 @@ body{
     .serv{
         display: flex;
         flex-direction: column;
+        -webkit-box-orient: column;
         margin-top: 30px;
         .services__items{
             margin: 0;
             display: flex;
             flex-direction: column !important;
+            -webkit-box-orient: column;
             width: 100% !important;
             align-items: flex-start;
             height: -webkit-max-content;
@@ -1470,6 +1479,8 @@ body{
     }
     .numbers__content{
         flex-direction: column-reverse;
+        -webkit-box-orient: column;
+        -webkit-box-direction: reverse;
         margin-top: 3em;
     }
     .numbers{
@@ -1486,8 +1497,10 @@ body{
         }
         .numbers__blocks{
             flex-direction: column;
+            -webkit-box-orient: column;
             .block__row{
                 flex-direction: column !important;
+                -webkit-box-orient: column;
             }
             .block{
                 margin: 0 !important;
@@ -1524,6 +1537,7 @@ body{
         margin-top: -2.6em !important;
         .contacts__content{
             flex-direction: column;
+            -webkit-box-orient: column;
             align-items: center;
             margin-top: 2.9em !important;
         }
@@ -1548,6 +1562,7 @@ body{
     margin-bottom: 0 !important;
     .form{
         flex-direction: column;
+        -webkit-box-orient: column;
         .form__content{
             width: 100% !important;
             input{
@@ -1605,6 +1620,7 @@ body{
     .column{
         display: flex;
         flex-direction: column;
+        -webkit-box-orient: column;
     }
     .footer__column{
         .logo{
@@ -1619,12 +1635,14 @@ body{
         &:nth-child(2){
             display: flex;
             flex-direction: column;
+            -webkit-box-orient: column;
             align-items: flex-start;
             .info{
                 cursor: pointer;
                 text-align: start;
                 display: flex;
                 flex-direction: column;
+                -webkit-box-orient: column;
                 margin: 0 0 40px 0;
                 .footer__text{
                     font-style: normal;
@@ -1681,6 +1699,7 @@ body{
     .footer__buttons{
         margin: 100px 0;
         justify-content: space-around !important;
+        -webkit-box-pack: space-between;
     }
 }
 .wrapper__menu{
@@ -1696,6 +1715,7 @@ body{
         list-style: none;
         display: flex;
         flex-direction: column;
+        -webkit-box-orient: column;
         align-items: flex-start;
         text-align: center;
         margin-bottom: 25px;
@@ -1765,6 +1785,7 @@ body{
         flex-direction: column;
         padding: 10%;
         justify-content: space-between;
+        -webkit-box-pack: space-between;
         height: 93%;
     }
     .link{
@@ -1786,6 +1807,7 @@ body{
             display: flex;
             width: 100%;
             justify-content: space-around;
+            -webkit-box-pack: center;
             .language__item{
                 img{
                     width: 50px;
