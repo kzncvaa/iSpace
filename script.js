@@ -59,22 +59,17 @@ $(window).scroll(function(){
         $('a').click(function (e) { 
             $('.wrapper__menu').css({display : `none`});
             setTimeout(function(){
-                $('.aboutus__nav').fadeOut(300).css({display : 'none'});
+               // $('.aboutus__nav').fadeOut(300).css({display : 'none'});
+
+                console.log($(document).scrollTop());
+                let x = $(document).scrollTop() -93;
+                $(document).scrollTop(x);
+
             }, 1000);
+
+
             
         });
-        // $('.link').click(function (e) { 
-        //     var x = $(this).attr('href');
-        //     console.log(x);
-        //     console.log($(x).offset().top);
-        //     console.log($(x).offset().top-200);
-        //     // setTimeout(function(){
-        //     //     document.documentElement.scrollTop = $(x).offset().top-200;
-        //     // }, 10)
-        //     $('html, body').animate({
-        //         scrollTop: $(x).offset().top-200
-        //       }, 500);
-        // });
     }
 
     var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
