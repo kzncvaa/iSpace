@@ -1850,6 +1850,10 @@ body{
 .wrapper__services, .wrapper__choise, .under, .wrapper__contacts{
    
 }
+.alert__wrapper__call, .alert__wrapper__aboutus, .alert__wrapper__works{
+    height: 100vh;
+    width: 100vw;
+}
 .ruen-abus:after{
     content: '';
     height: 10px;
