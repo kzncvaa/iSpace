@@ -44,6 +44,7 @@ $(window).scroll(function(){
     };
 });
 
+var isResizeble = false;
 
     if($(window).innerWidth() <= 480){
         $(document).scroll(function () {
@@ -57,17 +58,20 @@ $(window).scroll(function(){
             }
         });
         $('a').click(function (e) { 
-            $('.wrapper__menu').css({display : `none`});
             setTimeout(function(){
                // $('.aboutus__nav').fadeOut(300).css({display : 'none'});
-
                 console.log($(document).scrollTop());
-                let x = $(document).scrollTop() -93;
-             //   $(document).scrollTop(x, 100);
+                var x = $(document).scrollTop() -93;
+                if(!isResizeble) {
+                    x = $(document).scrollTop() -163;
+                    isResizeble = true;
+                }
+              //  $(document).scrollTop(x, 100);
               //  $(document).animate({scrollTop: x}, 400);
-              $('html, body').animate({scrollTop:x},'400');
+                $('html, body').animate({scrollTop:x},'400');
             }, 1000);
 
+            $('.wrapper__menu').css({display : `none`});
 
             
         });

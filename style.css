@@ -1078,7 +1078,7 @@ body {
   display: flex;
   color: #021A58;
   text-decoration: none;
-  align-items: center;
+  align-items: flex-end;
 }
 .alert__wrapper__works .alert__works .works__content ul li p {
   font-style: normal;
