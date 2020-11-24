@@ -1652,6 +1652,10 @@ body {
     justify-content: space-between;
     -webkit-box-pack: space-between;
     height: 93%;
+    width: 100%;
+  }
+  .wrapper__menu .links a {
+    margin-bottom: 13px !important;
   }
   .wrapper__menu .link {
     font-style: normal;
@@ -1665,7 +1669,6 @@ body {
   }
   .wrapper__menu .menu__language {
     align-self: center;
-    width: 60%;
   }
   .wrapper__menu .menu__language .language__items {
     display: flex;
@@ -1676,6 +1679,9 @@ body {
   .wrapper__menu .menu__language .language__items .language__item img {
     width: 50px;
     height: auto;
+  }
+  .wrapper__menu .menu__language .language__items .language__item:nth-child(2) {
+    margin: 0 20px;
   }
   .wrapper__menu .menu__language .language__items .active__lang img {
     border: 5px solid #F4522F;

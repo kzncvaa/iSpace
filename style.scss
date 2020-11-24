@@ -1788,6 +1788,10 @@ body{
         justify-content: space-between;
         -webkit-box-pack: space-between;
         height: 93%;
+        width: 100%;
+        a{
+            margin-bottom: 13px !important;
+        }
     }
     .link{
         font-style: normal;
@@ -1803,7 +1807,6 @@ body{
     }
     .menu__language{
         align-self: center;
-        width: 60%;
         .language__items{
             display: flex;
             width: 100%;
@@ -1813,6 +1816,9 @@ body{
                 img{
                     width: 50px;
                     height: auto;
+                }
+                &:nth-child(2){
+                    margin: 0 20px;
                 }
             }
             .active__lang{
