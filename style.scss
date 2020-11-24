@@ -1148,7 +1148,7 @@ body{
                         display: flex;
                         color: $textcolor;
                         text-decoration: none;
-                        align-items: flex-end;
+                        align-items: center;
                     }
                     p{
                         font-style: normal;
@@ -1718,10 +1718,12 @@ body{
         flex-direction: column;
         -webkit-box-orient: column;
         align-items: flex-start;
-        text-align: center;
+     //   text-align: center;
         margin-bottom: 25px;
         li{
             display: flex;
+            flex-direction: row;
+            -webkit-box-orient: row;
             .first{
                 font-style: normal;
                 font-weight: bold;
