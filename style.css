@@ -1701,8 +1701,11 @@ body {
   }
 
   .alert__wrapper__call, .alert__wrapper__aboutus, .alert__wrapper__works {
-    height: 100vh !important;
-    width: 100vw !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .alert__wrapper__call p, .alert__wrapper__call h1, .alert__wrapper__call h2, .alert__wrapper__aboutus p, .alert__wrapper__aboutus h1, .alert__wrapper__aboutus h2, .alert__wrapper__works p, .alert__wrapper__works h1, .alert__wrapper__works h2 {
+    margin-bottom: 13px !important;
   }
 
   .ruen-abus:after {
