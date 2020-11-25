@@ -61,7 +61,7 @@ var isResizeble = false;
             setTimeout(function(){
                // $('.aboutus__nav').fadeOut(300).css({display : 'none'});
                 console.log($(document).scrollTop());
-                var x = $(document).scrollTop() -83;
+                var x = $(document).scrollTop() -93;
                 if(!isResizeble) {
                     x = $(document).scrollTop() -163;
                     isResizeble = true;
