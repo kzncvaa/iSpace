@@ -82,9 +82,9 @@ function isiPhone(){
                 setTimeout(function(){
                    // $('.aboutus__nav').fadeOut(300).css({display : 'none'});
                     console.log($(document).scrollTop());
-                    var x = $(document).scrollTop() -163;
+                    var x = $(document).scrollTop() -93;
                     if(!isResizeble) {
-                        x = $(document).scrollTop() -163;
+                      //  x = $(document).scrollTop() -163;
                         isResizeble = true;
                     }
                   //  $(document).scrollTop(x, 100);
