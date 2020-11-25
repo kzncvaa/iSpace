@@ -45,6 +45,12 @@ $(window).scroll(function(){
 });
 
 var isResizeble = false;
+function isiPhone(){
+    return (
+        //Пользователь использует iPhone
+        (navigator.platform.indexOf("iPhone") != -1)
+    );
+}
 
     if($(window).innerWidth() <= 480){
         $(document).scroll(function () {
@@ -58,22 +64,35 @@ var isResizeble = false;
             }
         });
         $('a').click(function (e) { 
-            setTimeout(function(){
-               // $('.aboutus__nav').fadeOut(300).css({display : 'none'});
-                console.log($(document).scrollTop());
-                var x = $(document).scrollTop() -93;
-                if(!isResizeble) {
-                    x = $(document).scrollTop() -163;
-                    isResizeble = true;
-                }
-              //  $(document).scrollTop(x, 100);
-              //  $(document).animate({scrollTop: x}, 400);
-                $('html, body').animate({scrollTop:x},'400');
-            }, 1000);
-
-            $('.wrapper__menu').css({display : `none`});
-
-            
+            if(!isiPhone){
+                setTimeout(function(){
+                   // $('.aboutus__nav').fadeOut(300).css({display : 'none'});
+                    console.log($(document).scrollTop());
+                    var x = $(document).scrollTop() -93;
+                    if(!isResizeble) {
+                        x = $(document).scrollTop() -163;
+                        isResizeble = true;
+                    }
+                  //  $(document).scrollTop(x, 100);
+                  //  $(document).animate({scrollTop: x}, 400);
+                    $('html, body').animate({scrollTop:x},'400');
+                }, 1000);
+                $('.wrapper__menu').css({display : `none`});
+            }else{
+                setTimeout(function(){
+                   // $('.aboutus__nav').fadeOut(300).css({display : 'none'});
+                    console.log($(document).scrollTop());
+                    var x = $(document).scrollTop() -163;
+                    if(!isResizeble) {
+                        x = $(document).scrollTop() -163;
+                        isResizeble = true;
+                    }
+                  //  $(document).scrollTop(x, 100);
+                  //  $(document).animate({scrollTop: x}, 400);
+                    $('html, body').animate({scrollTop:x},'400');
+                }, 1000);
+                $('.wrapper__menu').css({display : `none`});
+            }
         });
     }
 
